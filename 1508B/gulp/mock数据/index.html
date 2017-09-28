@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="./jquery-2.1.1.js"></script>
+	<script>
+        $.ajax({
+        	url:"http://localhost:8800/login",
+        	type:'POST',
+        	// data:{
+        	// 	userName:"zhangsanad",
+        	// 	password:12345600
+        	// }
+        	data:'userName=zhangsanhy&password=123456'
+        })
+        .then(function(result){
+            console.log('11',result)
+        },function(error){
+            console.log('error',error)
+        })
+	</script>
+</body>
+</html>

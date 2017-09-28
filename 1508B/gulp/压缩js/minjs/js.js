@@ -1,0 +1,1 @@
+console.log("a"),console.log("b");var a=0,b=10,c=50;

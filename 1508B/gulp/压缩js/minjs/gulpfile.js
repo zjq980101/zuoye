@@ -1,0 +1,1 @@
+var gulp=require("gulp"),uglifyJS=require("gulp-uglify");gulp.task("minjs",function(){gulp.src("./*.js").pipe(uglifyJS()).pipe(gulp.dest("./minjs/"))}),gulp.task("default",["minjs"]);
